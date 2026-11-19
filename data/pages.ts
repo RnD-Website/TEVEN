@@ -114,17 +114,6 @@ const staticPages: Record<string, PageEntry> = {
     image: 'leafCluster',
     body: ['This placeholder should be replaced with your legally reviewed terms and conditions before launch.']
   },
-  'cookie-policy': {
-    eyebrow: 'Legal',
-    title: 'Cookie Policy',
-    intro: 'Which cookies we use and how you can control them.',
-    image: 'leafCluster',
-    body: [
-      'Necessary cookies keep the site working and remember your consent choice.',
-      'Analytics cookies (Google Analytics 4, Google Tag Manager, Hotjar, Umami) are only set after you accept them.',
-      'Marketing cookies are only set after you accept them. You can change your choice at any time via “Cookie settings” in the footer.'
-    ]
-  },
   quiz: {
     eyebrow: 'TEVEN Quiz',
     title: 'Discover your perfect cup.',

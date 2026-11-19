@@ -2,7 +2,6 @@
 import { footer } from '~/data/site'
 
 const props = withDefaults(defineProps<{ overlay?: boolean }>(), { overlay: false })
-const cookiePanel = useCookiePanel()
 const quizOpen = useQuizOpen()
 const root = ref<HTMLElement | null>(null)
 
@@ -56,7 +55,6 @@ useGsapContext(root, () => {
         <div class="footer__extra footer__reveal">
           <ul class="footer__links">
             <li v-for="l in footer.extra" :key="l.to"><NuxtLink :to="l.to" class="footer__link">{{ l.label }}</NuxtLink></li>
-            <li><button type="button" class="footer__link" @click="cookiePanel = true">Cookie settings</button></li>
           </ul>
           <dl class="footer__contact">
             <div v-for="c in footer.contact" :key="c.label">

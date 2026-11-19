@@ -57,7 +57,6 @@ const transition = {
     </main>
     <AppFooter :overlay="route.path === '/'" />
     <QuizModal />
-    <CookieConsent />
     <div ref="curtain" class="curtain" aria-hidden="true">
       <div class="curtain__mark"><TevenLogo variant="outline" /></div>
     </div>

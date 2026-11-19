@@ -347,8 +347,7 @@ export const footer = {
   extra: [
     { label: 'Contact', to: '/contact' },
     { label: 'Privacy Policy', to: '/privacy-policy' },
-    { label: 'Terms & Conditions', to: '/terms-and-conditions' },
-    { label: 'Cookie Policy', to: '/cookie-policy' }
+    { label: 'Terms & Conditions', to: '/terms-and-conditions' }
   ],
   contact: [
     { label: 'Email', value: 'hello@teven.tea', href: 'mailto:hello@teven.tea' },
