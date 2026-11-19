@@ -87,3 +87,7 @@ Set `NUXT_PUBLIC_SANITY_PROJECT_ID` (and dataset) to pull products, featured sto
 - **Fonts:** Barlow Condensed (condensed display caps), Fraunces (editorial serif), Manrope (sans) via Google Fonts.
 - Language selector sets the active language and `<html lang>`; content translations can be added via Sanity or `@nuxtjs/i18n`.
 - Legal pages contain placeholders — replace with reviewed copy before launch.
+
+## Deploying on Vercel
+
+Import the repository with the **Root Directory left empty** (repository root) and the **Nuxt** framework preset. `vercel.json` sets the build command (`npm run generate`) and output directory (`.output/public`). Do not set the root to `studio/`: that folder is the separate Sanity Studio app.
