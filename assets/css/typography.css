@@ -1,0 +1,55 @@
+/* Typography classes — same hierarchy as the reference
+   (title-1/2 condensed caps, mix titles in serif, sans headlines). */
+
+.t-title-1,
+.t-title-2,
+.t-title-3 {
+  font-family: var(--ff-display);
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 0.86;
+  letter-spacing: -0.01em;
+  color: var(--title);
+}
+.t-title-1 { font-size: var(--fs-title-1); }
+.t-title-2 { font-size: var(--fs-title-2); }
+.t-title-3 { font-size: var(--fs-title-3); }
+
+/* Small inline words inside condensed titles ("COFFEE that AWAKENS") */
+.t-title-1 em,
+.t-title-2 em,
+.t-title-3 em {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.5em;
+  letter-spacing: 0;
+  vertical-align: 0.05em;
+  margin-inline: 0.06em;
+}
+
+.t-serif-xl,
+.t-serif-l,
+.t-serif-m {
+  font-family: var(--ff-serif);
+  font-weight: 300;
+  letter-spacing: -0.035em;
+  line-height: 0.98;
+}
+.t-serif-xl { font-size: var(--fs-serif-xl); }
+.t-serif-l { font-size: var(--fs-serif-l); }
+.t-serif-m { font-size: var(--fs-serif-m); line-height: 1.04; }
+
+.t-headline-5 { font-size: var(--fs-headline-5); line-height: 1.4; font-weight: 500; }
+.t-headline-6 { font-size: var(--fs-headline-6); line-height: 1.45; font-weight: 500; }
+.t-text-3 { font-size: var(--fs-text-3); line-height: 1.5; font-weight: 500; }
+
+.t-label {
+  font-size: var(--fs-label);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+}
+.t-small { font-size: var(--fs-small); line-height: 1.3; font-weight: 600; }
+.t-num { font-variant-numeric: tabular-nums; }
+.t-center { text-align: center; }

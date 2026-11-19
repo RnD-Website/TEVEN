@@ -1,0 +1,23 @@
+/* Fluid column grid (28 cols desktop / 14 cols mobile) */
+.g-row {
+  display: grid;
+  grid-template-columns: repeat(var(--cols), minmax(0, 1fr));
+  column-gap: var(--gutter);
+  padding-inline: var(--page-pad);
+}
+.g-row.is-center { justify-items: center; }
+
+.g-full { grid-column: 1 / -1; }
+.g-center-12 { grid-column: 9 / span 12; }
+.g-center-16 { grid-column: 7 / span 16; }
+.g-center-20 { grid-column: 5 / span 20; }
+
+@media (max-width: 1023px) {
+  .g-center-12,
+  .g-center-16,
+  .g-center-20 { grid-column: 1 / -1; }
+}
+
+.container {
+  padding-inline: var(--page-pad);
+}

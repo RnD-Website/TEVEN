@@ -1,0 +1,90 @@
+/* ==========================================================================
+   TEVEN — Design tokens
+   Mirrors the reference design system (dark editorial base, warm light
+   accent buttons, light paper sections, deep-green sustainability block),
+   re-coloured for the TEVEN tea palette.
+   ========================================================================== */
+:root {
+  /* Brand palette */
+  --c-forest-900: #0d1712;   /* deepest — sustainability block */
+  --c-forest-800: #12201a;   /* main site background (reference: dark roast brown) */
+  --c-forest-700: #1b2c23;
+  --c-forest-600: #26392e;
+  --c-sage-500: #8a9a7b;
+  --c-sage-300: #b9c4a6;
+  --c-sage-100: #dfe6cf;
+  --c-lime-100: #e6ecc4;     /* sustainability headline tint */
+  --c-ivory-50: #f6f0e4;
+  --c-ivory-100: #f1e8d8;    /* paper sections (culture, quiz, journal) */
+  --c-beige-200: #e8d8bf;    /* primary light button (reference: #edd1bd) */
+  --c-beige-300: #d9c3a2;
+  --c-brown-900: #2a1d15;
+  --c-brown-700: #4a3426;
+  --c-gold-400: #c9a646;
+
+  /* Semantic */
+  --bg: var(--c-forest-800);
+  --fg: var(--c-ivory-50);
+  --fg-muted: rgba(246, 240, 228, 0.66);
+  --title: var(--c-beige-200);       /* big condensed titles on dark */
+  --paper: var(--c-ivory-100);
+  --ink: var(--c-forest-800);
+  --ink-muted: rgba(18, 32, 26, 0.7);
+  --line-dark: rgba(246, 240, 228, 0.14);
+  --line-light: rgba(18, 32, 26, 0.14);
+  --glass: rgba(18, 32, 26, 0.62);
+
+  /* Typography */
+  --ff-sans: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --ff-display: 'Barlow Condensed', 'Arial Narrow', sans-serif;   /* reference: Trade Gothic Bold Cond. */
+  --ff-serif: 'Fraunces', Georgia, 'Times New Roman', serif;      /* reference: editorial light serif */
+
+  /* Fluid type scale (desktop values tuned at 1440px) */
+  --fs-title-1: clamp(4.4rem, 10.4vw, 16rem);
+  --fs-title-2: clamp(4rem, 8.6vw, 13.2rem);
+  --fs-title-3: clamp(3.2rem, 5.6vw, 8.4rem);
+  --fs-serif-xl: clamp(4.4rem, 6.9vw, 11rem);
+  --fs-serif-l: clamp(3.4rem, 4.2vw, 6.4rem);
+  --fs-serif-m: clamp(2.6rem, 2.9vw, 4.4rem);
+  --fs-headline-5: clamp(1.7rem, 1.35vw, 2.2rem);
+  --fs-headline-6: clamp(1.6rem, 1.18vw, 1.9rem);
+  --fs-text-3: clamp(1.4rem, 0.97vw, 1.6rem);
+  --fs-label: 1.2rem;
+  --fs-small: 1.1rem;
+
+  /* Grid — 28-column fluid grid like the reference */
+  --cols: 28;
+  --page-pad: clamp(1.6rem, 1.67vw, 2.4rem);
+  --gutter: clamp(0.8rem, 0.83vw, 1.6rem);
+  --col: calc((100vw - var(--page-pad) * 2 - var(--gutter) * (var(--cols) - 1)) / var(--cols));
+
+  /* Radii */
+  --r-xs: 0.6rem;
+  --r-s: 1rem;
+  --r-m: 1.6rem;
+  --r-l: 2.4rem;
+  --r-pill: 6rem;
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.19, 1, 0.22, 1);     /* expo.out */
+  --ease-in-out: cubic-bezier(0.76, 0, 0.24, 1);
+  --ease-soft: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --dur-fast: 0.35s;
+  --dur: 0.6s;
+  --dur-slow: 1.2s;
+
+  /* Header */
+  --header-h: 8rem;
+  --z-header: 50;
+  --z-menu: 60;
+  --z-modal: 80;
+  --z-cookie: 90;
+  --z-loader: 100;
+}
+
+@media (max-width: 1023px) {
+  :root {
+    --cols: 14;
+    --header-h: 6.4rem;
+  }
+}
